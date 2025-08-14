@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <title>Site do Davi - Contato</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <style>
+        :root {
+            --cor-primaria: #000;
+            --cor-secundaria: #fff;
+        }
+
+        * {
+            margin: 0; padding: 0; box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--cor-secundaria);
+            color: var(--cor-primaria);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--cor-primaria);
+            color: var(--cor-secundaria);
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: var(--cor-secundaria);
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2.2em;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.1em;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .info-contato {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-left: 5px solid var(--cor-primaria);
+            margin-bottom: 30px;
+        }
+
+        .info-contato strong {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        form {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: var(--cor-primaria);
+            color: var(--cor-secundaria);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            margin-top: 15px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #222;
+        }
+
+        footer {
+            background-color: var(--cor-primaria);
+            color: var(--cor-secundaria);
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 600px) {
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contato - Fale com Davi</h1>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="historia.html">História</a>
+            <a href="idolos.html">Ídolos</a>
+            <a href="titulos.html">Títulos</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <p>
+            Torcedor do Peixão, aqui é o seu espaço! Se você ama o Santos tanto quanto eu, quer compartilhar sua história, tirar dúvidas ou apenas bater um papo sobre futebol, estou aqui pra te ouvir.
+        </p>
+
+        <p>
+            Mantenha a chama do alvinegro viva! Vamos juntos fortalecer essa torcida apaixonada e espalhar o amor pelo Santos Futebol Clube por todo o Brasil!
+        </p>
+
+        <div class="info-contato">
+            <strong>Nome:</strong> Davi Antonio Albano Temoteo<br>
+            <strong>Instagram:</strong> <a href="https://www.instagram.com/davizxp._" target="_blank">@davizxp._</a><br>
+            <strong>Email:</strong> <a href="mailto:davitemoteo33@gmail.com">davitemoteo33@gmail.com</a>
+        </div>
+
+        <form action="https://formsubmit.co/davitemoteo33@gmail.com" method="POST">
+            <label for="nome">Seu nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">Seu e-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="6" required></textarea>
+
+            <button type="submit">Enviar mensagem</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>Site criado por Davi • Todos os direitos reservados © 2025</p>
+    </footer>
+</body>
+</html>
